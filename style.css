@@ -120,6 +120,37 @@ header{
 
 
 
+/* Whats App Icon */
+.whats-app{
+    position: fixed;
+    bottom: 4.5rem;
+    right: 1.5rem;
+    border: 50%;
+    font-size: 3rem;
+    animation: btn-animations 4s infinite;
+}
+.whats-app a i{
+    color: rgb(86, 255, 86);
+}
+
+/* Top Bnt */
+
+.top-btn{
+    width: 2.6rem;
+    height: 2.6rem;
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    border: 50%;
+    background-color: orange;
+    color: black;
+    font-size: 1.5rem;
+    border-radius: 6px;
+    animation: btn-animations 4s infinite;
+}
+.top-btn a i{
+    color: black;
+}
 
 
 
@@ -139,6 +170,17 @@ header{
 
 
 
+@keyframes btn-animations {
+    0%{
+        scale: 1;
+    }
+    50%{
+        scale: 1.1;
+    }
+    100%{
+        scale: 1;
+    }
+}
 
 
 
