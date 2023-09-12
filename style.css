@@ -6,7 +6,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-body p{
+body p,h1,h2,h3,h4,h5{
     font-family: 'Ysabeau Infant', sans-serif;
 }
 .home-page-back-img{
@@ -74,7 +74,7 @@ header{
     padding: 1rem;
 }
 .section1-left h2 , .section1-left h4{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Ysabeau Infant', sans-serif;
 }
 .section2-right{
     width: 35%;
