@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Edu+NSW+ACT+Foundation:wght@700&family=Itim&family=Kalam:wght@400;700&family=Kanit:wght@300&family=Laila:wght@400;700&family=Libre+Baskerville&family=Merriweather&family=Niconne&family=Oleo+Script&family=Pacifico&family=Shrikhand&family=Signika+Negative:wght@600;700&family=Ysabeau+Infant:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body p{
+    font-family: 'Ysabeau Infant', sans-serif;
+}
+.home-page-back-img{
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(./Images/6000388.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.logo h3{
+    font-family: 'Ysabeau Infant', sans-serif;
+}
+.logo i{
+    position: fixed;
+    right: -10rem;
+    color: white;
+    font-size: 2rem;
+}
+header{
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: -0.5rem;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    background-color: #258;
+}
+.nav1 i{
+    position: absolute;
+    right: -10rem;
+    color: white;
+    font-size: 2rem;
+}
+.nav1 ul {
+    display: flex;
+}
+.nav1 ul li a{
+    padding: 1.6rem;
+    font-family: 'Ysabeau Infant', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: white;
+    transition: 0.6s;
+}
+ ul li a:hover{
+    text-shadow: 0px 0px 10px white;
+}
+.section-margin-top{
+    position: absolute;
+    top: 6rem;
+    width: 100%;
+    height: 100vh;
+}
+.home-display-content{
+    margin-top: 2.5rem;
+    height: 80%;
+    line-height: 2rem;
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+}
+.section1-left{
+    color: white;
+    width: 35%;
+    padding: 1rem;
+}
+.section1-left h2 , .section1-left h4{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.section2-right{
+    width: 35%;
+    color: white;
+    padding: 1rem;
+}
+
+
+.web-logo img , .domain-logo img{
+    width: 5rem;
+    margin: 0.6rem 0rem;
+}
+.section1-service,.section2-service{
+    width: 40%;
+    padding: 3rem;
+    text-align: center;
+    font-size: 1.2rem;
+    letter-spacing: 0.8px;
+}
+
+.about-choose,.section1-whyChoose,.section2-whyCoose,.section3-whyCoose,.section4-whyCoose,.section5-whyCoose{
+    width: 60%;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem auto;
+    font-size: 1.2rem;
+    letter-spacing: 0.8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:300px) and (max-width:480px) {
+    header{
+        left: -0.5rem;
+    }
+    .nav1{
+        position: absolute;
+        width: 100%;
+        top: 5rem;
+        height: 0rem;
+        overflow: hidden;
+        left: 0rem;
+        text-align: center;
+        transition: 0.5s;
+        z-index: -10;
+        background-color: rgb(140, 140, 140);
+    }
+    .logo i{
+        top: 1.5rem;
+        right: 1.5rem;
+    }
+    .nav1 i{
+        top: 1rem;
+        right: 1rem;
+    }
+    .nav1 ul{
+        flex-direction: column;
+    }
+    .nav1 ul li{
+        padding: 1rem;
+    }
+    .left-headings h2, .left-headings h4{
+        font-size: 1.4rem;
+    }
+    .home-display-content{
+        flex-direction: column;
+    }
+    .section1-left,.section2-right{
+        width: 85%;
+        padding: 0rem;
+        margin: 0;
+        line-height: 26px;
+        padding: 0;
+    }
+    .services-container{
+        flex-direction: column;
+    }
+    .section1-service,.section2-service{
+        width: 95%;
+        padding: 0.8rem;
+        color: black;
+    }
+    .about-choose,.section1-whyChoose,.section2-whyCoose,.section3-whyCoose,.section4-whyCoose,.section5-whyCoose{
+        width: 95%;
+        padding: 1rem;
+        margin: 0.5rem 0rem;
+    }
+}
