@@ -6,8 +6,12 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-body p,h1,h2,h3,h4,h5{
+body p{
     font-family: 'Ysabeau Infant', sans-serif;
+}
+h1,h2,h3,h4,h5{
+    font-family: 'Ysabeau Infant', sans-serif;
+    font-weight: bold;
 }
 .home-page-back-img{
     min-height: 100vh;
