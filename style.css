@@ -10,7 +10,7 @@ body p{
     font-family: 'Ysabeau Infant', sans-serif;
 }
 h1,h2,h3,h4,h5{
-    font-family: 'Ysabeau Infant', sans-serif;
+    font-family: 'Alatsi';
     font-weight: bold;
 }
 .home-page-back-img{
@@ -37,7 +37,11 @@ header{
     left: -0.5rem;
     width: 100%;
     backdrop-filter: blur(10px);
-    background-color: #258;
+    background:  #258 ;
+}
+.nav1{
+    margin-top: 0.5rem;
+    height: 3rem;
 }
 .nav1 i{
     position: absolute;
@@ -48,6 +52,9 @@ header{
 .nav1 ul {
     display: flex;
 }
+.nav1 ul li{
+    transition: 0.5s;
+}
 .nav1 ul li a{
     padding: 1.6rem;
     font-family: 'Ysabeau Infant', sans-serif;
@@ -56,7 +63,10 @@ header{
     color: white;
     transition: 0.6s;
 }
- ul li a:hover{
+.nav1 ul li:hover{
+    transform: translateY(-6px);
+}
+.nav1 ul li a:hover , .left-headings h2{
     text-shadow: 0px 0px 10px white;
 }
 .section-margin-top{
@@ -99,14 +109,68 @@ header{
     letter-spacing: 0.8px;
 }
 
-.about-choose,.section1-whyChoose,.section2-whyCoose,.section3-whyCoose,.section4-whyCoose,.section5-whyCoose{
-    width: 60%;
+.why-choose-us,.our-devlp-process{
+    width: 70%;
     text-align: center;
     padding: 1rem;
     margin: 1rem auto;
     font-size: 1.2rem;
     letter-spacing: 0.8px;
 }
+
+
+
+
+
+
+
+
+
+
+/* FAQ styles */
+.faq-container{
+    width: 65%;
+    margin: 2rem auto;
+}
+.faq-heading{
+    color: blue;
+}
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    transition: 0.4s;
+    font-weight: 700;
+    margin: 0.6rem 0rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  .accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  .active:after {
+    content: "\2212";
+  }
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    font-weight: 600;
+  }
 
 
 
@@ -136,19 +200,22 @@ header{
 /* Top Bnt */
 
 .top-btn{
+    display: none;
     width: 2.6rem;
     height: 2.6rem;
     position: fixed;
     bottom: 1.5rem;
     right: 1.5rem;
     border: 50%;
+    outline: none;
+    border: none;
     background-color: orange;
     color: black;
     font-size: 1.5rem;
     border-radius: 6px;
     animation: btn-animations 4s infinite;
 }
-.top-btn a i{
+.top-btn i{
     color: black;
 }
 
@@ -156,9 +223,113 @@ header{
 
 
 
+/* Footer styles */
+footer{
+    background-color: #140b5c;
+    padding: 2rem 0.2rem;
+    color: white;
+}
+footer .footer{
+    width: 40rem;
+    text-align: center;
+}
+footer h3{
+    color: springgreen;
+}
+footer ul {
+    text-align: start;
+}
+footer ul li{
+    transition: 0.5s;
+}
+footer ul li:hover{
+    transform: translateX(6px);
+}
+.footer-contact-us label{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.footer-social-media button{
+    background: transparent;
+    outline: none;
+    border: none;
+}
+.footer-social-media button a{
+    padding: 0.2rem 0.6rem;
+    border:  2px solid #258;
+    border-radius: 4px;
+    transition: 0.6s;
+}
+.footer-social-media button a:hover{
+    background-color: #258;
+    color: white;
+    box-shadow: 0px 0px 10px white;
+}
+.social-icons {
+    margin-top: 1.2rem;
+}
+.social-icons a i{
+    font-size: 2rem;
+    margin: 0.1rem 0.4rem;
+}
+.social-icons a i:hover{
+    color: deepskyblue;
+}
+.copyright-container{
+    background-color: #2b2b2b;
+    color: white;
+}
 
 
 
+/* The Modal (background) */
+.welcome-message{
+    font-family: 'Ysabeau Infant', sans-serif;
+    font-size: 2rem;
+}
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    width: 50%; 
+    height: 50%;
+  }
+  #myModal{
+    top: 20%;
+    left: 27%;
+    width: 50%; 
+    transition: 0.5s;
+  }
+  .modal-content {
+    position: absolute;
+    background-color: #fefefe;
+    margin: 15% auto; 
+    text-align: center;
+    padding: 20px;
+    overflow: auto;
+    border: 1px solid #888;
+  }
+  .modal-content p{
+    font-weight: 600;
+    font-size: 1.3rem;
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    color: #aaa;
+    right: 0.6rem;
+    top: 0rem;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
 
 
 
@@ -184,14 +355,14 @@ header{
 
 
 
-@media (min-width:300px) and (max-width:480px) {
+@media (min-width:300px) and (max-width:794px) {
     header{
         left: -0.5rem;
     }
     .nav1{
         position: absolute;
         width: 100%;
-        top: 5rem;
+        top: 2.7rem;
         height: 0rem;
         overflow: hidden;
         left: 0rem;
@@ -201,8 +372,8 @@ header{
         background-color: rgb(140, 140, 140);
     }
     .logo i{
-        top: 1.5rem;
-        right: 1.5rem;
+        top: 0.5rem;
+        right: 0.5rem;
     }
     .nav1 i{
         top: 1rem;
@@ -235,9 +406,49 @@ header{
         padding: 0.8rem;
         color: black;
     }
-    .about-choose,.section1-whyChoose,.section2-whyCoose,.section3-whyCoose,.section4-whyCoose,.section5-whyCoose{
+    .why-choose-us,.our-devlp-process{
         width: 95%;
         padding: 1rem;
         margin: 0.5rem 0rem;
+    }
+
+
+
+
+
+
+    .faq-container{
+        width: 95%;
+        margin: 2rem auto;
+    }
+    #myModal{
+        width: 80%;
+        left: 10%;
+    }
+
+
+
+    footer{
+        flex-direction: column;
+    }
+    footer .footer{
+        width: 90%;
+        margin: 1rem auto;
+    }
+    footer ul {
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 1260px) and (min-width:781px){
+    .why-choose-us,.our-devlp-process{
+        width: 90%;
+        padding: 1rem;
+        margin: 0.5rem auto;
+    }
+    .faq-container{
+        width: 75%;
+        margin: 2rem auto;
     }
 }
