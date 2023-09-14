@@ -458,11 +458,11 @@ footer ul li:hover{
 
 @media (max-width: 1260px) and (min-width:781px){
     .home-page-back-img{
-        height: 50vh;
+        height: 40vh;
     }
     .section-margin-top{
         top: 0.5rem;
-        height: 50vh;
+        height: 45vh;
     }
     .why-choose-us,.our-devlp-process{
         width: 90%;
