@@ -7,6 +7,7 @@
     scroll-behavior: smooth;
 }
 body p{
+    letter-spacing: 0.8px;
     font-family: 'Ysabeau Infant', sans-serif;
 }
 h1,h2,h3,h4,h5{
@@ -179,16 +180,80 @@ header{
     font-weight: 600;
   }
 
-
-
-
-
-
-
 /* Call button */
 .call-to-retro-labs-btn a{
     font-family: 'Ysabeau Infant', sans-serif;
 }
+
+
+
+/* About Page Styles */
+
+.about-main-background{
+    height: 100vh;
+    width: 100%;
+}
+.about-back-img{
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(./Images/about-background\ .jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+}
+.about-main-right-content,.project-main-right-content{
+    width: 30rem;
+    position: absolute;
+    top: 35%;
+    right: 4%;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Project Page Styles */
+
+.project-main-background{
+    width: 100%;
+    height: 100vh;
+}
+.project-back-img{
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(./Images/project-back-ground.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+}
+.project-main-right-content{
+    top: 38%;
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -263,12 +328,12 @@ footer ul li:hover{
     font-weight: 500;
     font-family: 'Ysabeau Infant', sans-serif;
 }
-.footer-social-media button{
+.footer-social-media button, .project-main-right-content button,.about-main-right-content button{
     background: transparent;
     outline: none;
     border: none;
 }
-.footer-social-media button a{
+.footer-social-media button a , .project-main-right-content button a ,.about-main-right-content button a{
     padding: 0.2rem 0.6rem;
     border:  2px solid #258;
     border-radius: 4px;
@@ -276,7 +341,7 @@ footer ul li:hover{
     font-family: 'Ysabeau Infant', sans-serif;
 
 }
-.footer-social-media button a:hover{
+.footer-social-media button a:hover , .project-main-right-content button a:hover, .about-main-right-content button a:hover{
     background-color: #258;
     color: white;
     box-shadow: 0px 0px 10px white;
@@ -312,8 +377,8 @@ footer ul li:hover{
   }
   #myModal{
     top: 20%;
-    left: 27%;
-    width: 50%; 
+    left: 15%;
+    width: 70%; 
     transition: 0.5s;
   }
   .modal-content {
@@ -428,7 +493,30 @@ footer ul li:hover{
         margin: 0.5rem 0rem;
     }
 
+    /* About Page Styles */
+    .about-back-img{
+        right: 0;
+        width: 100%;
+        height: 100vh;
+    }
+    .about-main-right-content{
+        width: 20rem;
+        position: absolute;
+        top: 45%;
+    }
 
+    /* Projects Page Styles */
+    
+    .project-back-img{
+        right: 0;
+        width: 100%;
+        height: 100vh;
+    }
+    .project-main-right-content{
+        width: 20rem;
+        position: absolute;
+        top: 50%;
+    }
 
 
 
@@ -437,8 +525,8 @@ footer ul li:hover{
         margin: 2rem auto;
     }
     #myModal{
-        width: 80%;
-        left: 10%;
+        width: 96%;
+        left: 2%;
     }
 
 
