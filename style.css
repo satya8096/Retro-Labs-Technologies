@@ -462,6 +462,7 @@ footer ul li:hover{
     }
     .section-margin-top{
         top: 0.5rem;
+        height: 50vh;
     }
     .why-choose-us,.our-devlp-process{
         width: 90%;
