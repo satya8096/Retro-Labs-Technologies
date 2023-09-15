@@ -40,11 +40,46 @@
     </header>
     
 
+    <div class="contact-main-background">
+        <div class="contact-back-img">
+            <div class="contact-main-right-content">
+                <h1 class="text-success">Connect with Us for Digital Excellence</h1>
+                <p>Contact us to start a conversation about your digital needs. Our team of experts is ready to assist you in crafting a tailored web solution that aligns with your goals. Let's connect and create success together.</p>
+                <button class="mt-3"><a href="#" class="text-decoration-none">Contact Us <i class="fa-solid fa-angles-right"></i></a></button>
+            </div>
+        </div>
+    </div>
 
 
+    <!-- Contact Details -->
+    <div class="contact-details-container">
+        <div class="contact-details">
+            <h1 class="text-center text-primary">Connect with Our Team</h1>
+            <p class="text-center text-danger"><i class="fa-solid fa-phone"></i> Phone & What's App</p>
+            <p class="text-center">+91 9398840252</p>
+            <p class="text-center text-danger"><i class="fa-solid fa-envelope"></i> Email </p>
+            <p class="text-center">info@retrolabstechnologies.com</p>
+            <p class="text-center text-danger"><i class="fa-solid fa-location-dot"></i> Address</p>
+            <p class="text-center">Andhra Pradesh & Telangana</p>
+        </div>
+    </div>
 
+    <!-- Contact Form -->
 
-
+    <div class="contact-form-container">
+        <form>
+            <h1 class="text-center text-success">Get in Touch, Let's Build Together!</h1>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name.." required>
+          <label for="email">Email </label>
+          <input type="email" id="email" name="email" placeholder="Your Email.." required>
+          <label for="email">Phone </label>
+          <input type="text" id="phone" name="phone" placeholder="Your Phone Number.." required>
+          <label for="textarea">Question</label>
+          <textarea id="textarea" name="textarea" placeholder="Question or Queries...." style="height:10rem"></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
 
 
     <!-- Whats App Icon -->
@@ -57,7 +92,80 @@
     <button class="top-btn d-flex align-items-center justify-content-center" onclick="topFunction()" id="top-btn1" title="Go to top"><i class="fa-solid fa-caret-up"></i>
     </button>
 
+
+    <!-- Footer  -->
+
+    <footer class="d-flex align-items-baseline justify-content-around">
+        <div class="footer-slogan footer">
+            <h3>Retro Labs</h3>
+            <p>Elevate Your Brand with Our Artful Web Design Solutions.</p>
+            <p>Retro Labs is one of the most creative and experienced Website  Development companies in Andhra Pradesh & Telangana.</p>
+        </div>
+        <div class="footer-nav-container footer">
+            <h3>Company</h3>
+            <ul class="footer-nav">
+                <li class="list-unstyled"><a href="./index.html" class="text-decoration-none text-white"dd><i class="fa-solid fa-angles-right"></i> Home</a></li>
+                <li class="list-unstyled"><a href="./about.html" class="text-decoration-none text-white"><i class="fa-solid fa-angles-right"></i> About Us</a></li>
+                <li class="list-unstyled"><a href="./services.html" class="text-decoration-none text-white"><i class="fa-solid fa-angles-right"></i> Services</a></li>
+                <li class="list-unstyled"><a href="./projects.html" class="text-decoration-none text-white"><i class="fa-solid fa-angles-right"></i> Projects</a></li>
+                <li class="list-unstyled"><a href="./contact.html" class="text-decoration-none text-white"><i class="fa-solid fa-angles-right"></i> Contact Us</a></li>
+                <li class="list-unstyled"><a href="#" class="text-decoration-none text-white"><i class="fa-solid fa-angles-right"></i> Terms & Conditions</a></li>
+            </ul>
+        </div>
+        <div class="footer-contact-us footer">
+            <h3>Contact Details</h3>
+            <label><i class="fa-solid fa-envelope"></i> Email : </label>
+            <p>info@retrolabstechnologies.com</p>
+            <label><i class="fa-solid fa-phone"></i> Phone & What's App :</label>
+            <p>+91 9398840252</p>
+            <label><i class="fa-solid fa-location-dot"></i> Address :</label>
+            <p>Andhra Pradesh & Telangana</p>
+        </div>
+        <div class="footer-social-media footer">
+            <div class="social-icons">
+                <h3 class="mb-4">Follow Us</h3>
+                <a href="#" class="text-warning"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="text-warning"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#" class="text-warning"><i class="fa-brands fa-square-twitter"></i></a>
+                <a href="#" class="text-warning"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="#" class="text-warning"><i class="fa-brands fa-square-youtube"></i></a>
+            </div>
+            <button class="mt-5"><a href="#" class="text-decoration-none">Contact Us <i class="fa-solid fa-angles-right"></i></a></button>
+        </div>
+    </footer>
+    <div class="copyright-container pt-2 pb-2">
+        <p class="text-center mt-3">Copyright &copy; All rights Reserved By <a href="#" class="text-decoration-none">Retro Labs Technologies</a></p>
+    </div>
+
+
+    <!-- Trigger/Open The Modal -->
+
+    <div class="trigger">
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3 class="welcome-message text-danger">Welcome To Retro Labs Contact Page</h3>
+                <p>Elevate Your Online Presence with Our Inspired Web Design: Where Every Click Leaves a Lasting Impression.</p>
+            </div>
+        </div>
+    </div>
+
+    
+
     <!-- JavaScript -->
     <script src="./script.js"></script>
+    <script>
+        ScrollReveal({ reset: true,
+        distance : '20px',
+        duration: 1500,
+        delay:200 });
+        ScrollReveal().reveal('header', { delay: 400 , origin : 'top'});
+        ScrollReveal().reveal('.contact-main-right-content,.contact-back-img,.contact-details,.contact-form-container', { delay: 400 , origin : 'bottom'});
+    </script>
+
+
+
 </body>
 </html>

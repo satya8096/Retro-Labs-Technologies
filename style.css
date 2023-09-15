@@ -8,11 +8,15 @@
 }
 body p{
     letter-spacing: 0.8px;
+    font-size: 1.2rem;
     font-family: 'Ysabeau Infant', sans-serif;
 }
 h1,h2,h3,h4,h5{
     font-family: 'Akaya Telivigala', cursive;
     font-weight: bold;
+}
+hr.hr{
+    border: 2px solid #D64933;
 }
 .home-page-back-img{
     height: 100vh;
@@ -189,7 +193,7 @@ header{
 
 /* About Page Styles */
 
-.about-main-background{
+.about-main-background,.project-main-background,.services-main-background,.contact-main-background{
     height: 100vh;
     width: 100%;
 }
@@ -203,7 +207,7 @@ header{
     background-attachment: fixed;
     background-size: contain;
 }
-.about-main-right-content,.project-main-right-content{
+.about-main-right-content,.project-main-right-content,.service-main-right-content,.contact-main-right-content{
     width: 30rem;
     position: absolute;
     top: 35%;
@@ -211,10 +215,87 @@ header{
     font-size: 1.2rem;
     text-align: center;
 }
+.about-content-container{
+    text-align: center;
+    width: 70%;
+    margin: 2rem auto;
+}
+
+/* Team Members */
+.team-container{
+    width: 60%;
+    margin: 2rem auto;
+}
+.member-card{
+    padding: 1rem;
+    width: 40%;
+    position: relative;
+    word-wrap: break-word;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 6px;
+    transition: 0.5s;
+    box-shadow: 0px 0px 6px black;
+}
+.member-card:hover{
+    scale: 1.02;
+}
+.member-card img{
+    margin-bottom: 1rem;
+    width: 100%;
+}
+.member-card button{
+    width: 100%;
+}
 
 
 
-
+/* Services Page Styles */
+.service-back-img{
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(./Images/services-background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+}
+.service-main-right-content{
+    top: 30%;
+}
+.services-content-container{
+    width: 100%;
+    text-align: center;
+    margin: 1rem auto;
+}
+.services-container{
+    width: 45%;
+    margin: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+}
+.services-container h4{
+    color: #D64933;
+}
+.services-container img{
+    width: 20rem;
+    height: 14rem;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.services-lets-begin-content,.our-services-heading{
+    width: 80%;
+    margin: 2rem auto;
+    text-align: center;
+}
+.our-services-heading{
+    margin-top: 6rem;
+}
 
 
 
@@ -227,11 +308,6 @@ header{
 
 
 /* Project Page Styles */
-
-.project-main-background{
-    width: 100%;
-    height: 100vh;
-}
 .project-back-img{
     position: absolute;
     right: 0;
@@ -248,8 +324,70 @@ header{
 
 
 
-
-
+/* Contact Page Styles */
+.contact-back-img{
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(./Images/Contact\ us\ page\ background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+}
+.contact-details{
+    word-wrap: break-word;
+    padding: 1.5rem;
+    border-radius: 6px;
+    border:  2px solid black;
+    width: 60%;
+    margin: 2rem auto;
+    box-shadow: 0px 0px 4px black;
+}
+.contact-details p{
+    font-size: 1.3rem;
+}
+.contact-form-container form{
+    padding: 1.5rem;
+    width: 60%;
+    margin: 3rem auto;
+    border: 2px solid black;
+    border-radius: 6px;
+    box-shadow: 0px 0px 4px black;
+}
+.contact-form-container form label{
+    font-family: 'Akaya Telivigala', cursive;
+    font-size: 1.2rem;
+}
+.contact-form-container form input, textarea,input[type=email]  {
+    width: 100%; 
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical;
+    outline: none;
+    font-family: 'Ysabeau Infant', sans-serif;
+  }
+  .contact-form-container form input[type=submit]{
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 1rem auto;
+    font-family: 'Ysabeau Infant', sans-serif;
+  }
+  .contact-form-container form input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  .contact-form-container form input:focus,textarea:focus{
+    border: 1px solid blue;
+    box-shadow: 0px 0px 6px blue;
+  }
 
 
 
@@ -328,12 +466,12 @@ footer ul li:hover{
     font-weight: 500;
     font-family: 'Ysabeau Infant', sans-serif;
 }
-.footer-social-media button, .project-main-right-content button,.about-main-right-content button{
+.footer-social-media button, .project-main-right-content button,.about-main-right-content button,.service-main-right-content button,.contact-main-right-content button{
     background: transparent;
     outline: none;
     border: none;
 }
-.footer-social-media button a , .project-main-right-content button a ,.about-main-right-content button a{
+.footer-social-media button a , .project-main-right-content button a ,.about-main-right-content button a,.service-main-right-content button a,.contact-main-right-content button a{
     padding: 0.2rem 0.6rem;
     border:  2px solid #258;
     border-radius: 4px;
@@ -341,7 +479,7 @@ footer ul li:hover{
     font-family: 'Ysabeau Infant', sans-serif;
 
 }
-.footer-social-media button a:hover , .project-main-right-content button a:hover, .about-main-right-content button a:hover{
+.footer-social-media button a:hover , .project-main-right-content button a:hover, .about-main-right-content button a:hover,.service-main-right-content button a:hover,.contact-main-right-content button a:hover{
     background-color: #258;
     color: white;
     box-shadow: 0px 0px 10px white;
@@ -427,7 +565,7 @@ footer ul li:hover{
         scale: 1;
     }
     50%{
-        scale: 1.1;
+        scale: 1.2;
     }
     100%{
         scale: 1;
@@ -481,6 +619,7 @@ footer ul li:hover{
     }
     .services-container{
         flex-direction: column;
+        margin: 0rem;
     }
     .section1-service,.section2-service{
         width: 95%;
@@ -504,6 +643,45 @@ footer ul li:hover{
         position: absolute;
         top: 45%;
     }
+    .about-content-container{
+        width: 90%;
+    }
+    .team-container{
+        width: 85%;
+    }
+    .team-members{
+        gap: 3rem;
+        flex-direction: column;
+    }
+    .member-card{
+        width: 95%;
+    }
+
+    /* Services Page Styles */
+    .service-back-img{
+        right: 0;
+        width: 100%;
+        height: 100vh;
+    }
+    .service-main-right-content{
+        width: 20rem;
+        position: absolute;
+        top: 45%;
+    }
+    .services-content-container{
+        width: 95%;
+        margin-top: 10rem;
+        flex-direction: column;
+    }
+    .services-container{
+        width: 100%;
+    }
+    .services-lets-begin-content{
+        width: 95%;
+    }
+
+
+
 
     /* Projects Page Styles */
     
@@ -518,7 +696,21 @@ footer ul li:hover{
         top: 50%;
     }
 
-
+    /* Contact Us Page Styles */
+    
+    .contact-back-img{
+        right: 0;
+        width: 100%;
+        height: 100vh;
+    }
+    .contact-main-right-content{
+        width: 20rem;
+        position: absolute;
+        top: 50%;
+    }
+    .contact-form-container form,.contact-details{
+        width: 95%;
+    }
 
     .faq-container{
         width: 95%;

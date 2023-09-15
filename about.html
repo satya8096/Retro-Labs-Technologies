@@ -52,28 +52,66 @@
     </div>
 
 
+    <div class="about-content-container">
+        <h1 class="text-primary p-3 about-heading">About Our Company</h1>
+        <div class="about-container">
+            <h3 class="text-danger about-sub-head">Our Story</h3>
+            <p>At Retro Labs, we believe that every digital journey is a unique story waiting to be told. Our story started [number of years] ago when a group of creative minds and tech enthusiasts came together with a shared vision: to blend the timeless charm of the past with the limitless possibilities of modern web technology.</p>
+        </div>
+        <div class="about-container">
+            <h3 class="text-danger about-sub-head1">Our Mission</h3>
+            <p>Our mission is simple: to empower brands, businesses, and individuals to thrive in the digital realm. We are not just a web services company; we are your partners in crafting remarkable online experiences that resonate with your audience and drive success.</p>
+        </div>
+        <div class="about-container">
+            <h3 class="text-danger about-sub-head">Our Approach</h3>
+            <p>We take a client-centric approach to everything we do. Your success is our ultimate goal, and we work closely with you to understand your objectives, target audience, and industry nuances. Our tailored solutions are designed to meet your specific needs and goals.</p>
+        </div>
+        <div class="about-container">
+            <h3 class="text-danger about-sub-head1">Join the Retro Labs Family</h3>
+            <p>Choosing Retro Labs means choosing a dedicated team of professionals who are passionate about your digital success. Whether you're a startup with a groundbreaking idea or an established brand looking to revitalize your online presence, we have the expertise and enthusiasm to make it happen. Join hands with us at Retro Labs, and let's embark on this exciting journey towards digital excellence. Explore our services, dive into our portfolio, and get in touch with us today. Together, we'll craft a digital masterpiece that seamlessly blends the past with the future, creating a lasting legacy in the online world. Your digital adventure begins here, at Retro Labs, where creativity knows no bounds, and innovation takes center stage. Choose Retro Labs, where we believe in crafting a digital world that's not just functional but emotionally resonant and visually spectacular. Welcome to the future, steeped in nostalgia.</p>
+        </div>
+        <div class="about-container">
+            <h3 class="text-danger about-sub-head">Our Pledge to You</h3>
+            <p>At Retro Labs Technologies, our commitment extends far beyond delivering a project. We're here to support your digital journey, providing ongoing assistance and evolving with your online presence. Your success is our success, and we take pride in being your partners in the digital realm.</p>
+        </div>
+        <div class="about-container">
+            <h3 class="text-danger about-sub-head1">Choose Retro Labs Technologies</h3>
+            <p>Whether you're a budding entrepreneur with a groundbreaking idea or a seasoned business looking for a digital transformation, Retro Labs Technologies is your trusted ally. We bring not just expertise but also enthusiasm to every project we undertake. Join us in crafting your digital legacy. Explore our services, peruse our portfolio, and reach out to us today. Together, let's embark on a captivating journey that blends the charm of the past with the innovation of the future. Choose Retro Labs Technologies, where digital excellence meets timeless nostalgia. Welcome to the future, steeped in memories.</p>
+        </div>
+    </div>
+    <hr class="hr">
 
 
 
 
 
 
+    <!-- Team Profiles -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <div class="team-container">
+        <h1 class="text-center text-primary team-heading">Meat <span class="text-decoration-line-through">Our</span> Your Team</h1>
+        <p class="text-center mb-5 team-para">Well, that’s what drives us to our desks every day — building products that delight users, that solve business challenges, that make the world a better place, and that deliver promises. And, yes, we can do it for you too.</p>
+        <div class="team-members d-flex align-items-center justify-content-around flex-wrap">
+            <div class="member-card">
+                <img src="./Images/about1.JPG" alt="">
+                <div class="member-details-container">
+                    <h2>P Sai Aniketh</h2>
+                    <p class="title">Co-Founder &amp; Front-End Developer</p>
+                    <p>saianiketh@gmail.com</p>
+                    <p><button class="btn btn-primary">Contact</button></p>
+                </div>
+            </div>
+            <div class="member-card">
+                <img src="./Images/about1.JPG" alt="">
+                <div class="member-details-container">
+                    <h2>K Satyanarayana</h2>
+                    <p class="title">Co-Founder &amp; Front-End Developer</p>
+                    <p>satyanarayana@gmail.com</p>
+                    <p><button class="btn btn-primary">Contact</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -135,20 +173,31 @@
 
 
     <!-- Trigger/Open The Modal -->
-
     <div class="trigger">
         <!-- The Modal -->
         <div id="myModal" class="modal">
             <!-- Modal content -->
             <div class="modal-content">
                 <span class="close">&times;</span>
-                <h3 class="welcome-message text-danger">Welcome To Retro Labs Technologies</h3>
+                <h3 class="welcome-message text-danger">Welcome To Retro Labs About Page</h3>
                 <p>Elevate Your Online Presence with Our Inspired Web Design: Where Every Click Leaves a Lasting Impression.</p>
             </div>
         </div>
     </div>
 
+
     <!-- JavaScript -->
     <script src="./script.js"></script>
+    <script>
+        ScrollReveal({ reset: true,
+        distance : '20px',
+        duration: 1500,
+        delay:200 });
+        ScrollReveal().reveal('header', { delay: 400 , origin : 'top'});
+        ScrollReveal().reveal('.about-main-background,.about-main-right-content,.about-container,.team-para,.member-card', { delay: 400 , origin : 'bottom'});
+        ScrollReveal().reveal('.team-heading,.about-heading,.about-sub-head1', { delay: 400 , origin : 'left'});
+        ScrollReveal().reveal('.about-sub-head', { delay: 400 , origin : 'right'});
+    </script>
+    
 </body>
 </html>
