@@ -371,6 +371,9 @@ header{
     outline: none;
     font-family: 'Ysabeau Infant', sans-serif;
   }
+  #textarea{
+    font-family: 'Ysabeau Infant', sans-serif;
+  }
   .contact-form-container form input[type=submit]{
     background-color: #04AA6D;
     color: white;
