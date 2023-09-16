@@ -36,7 +36,7 @@ hr.hr{
     font-size: 2rem;
 }
 header{
-    z-index: 2;
+    z-index: 1000;
     position: fixed;
     top: 0;
     left: -0.5rem;
@@ -213,7 +213,7 @@ header{
     background-attachment: fixed;
     background-size: contain;
 }
-.about-main-right-content,.project-main-right-content,.service-main-right-content,.contact-main-right-content{
+.about-main-right-content,.service-main-right-content,.contact-main-right-content{
     width: 30rem;
     position: absolute;
     top: 35%;
@@ -314,19 +314,214 @@ header{
 
 
 /* Project Page Styles */
+.project-main-background{
+    /* background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)); */
+}
 .project-back-img{
-    position: absolute;
-    right: 0;
-    width: 100%;
+    width: 53%;
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(./Images/project-back-ground_6_11zon.jpg);
+    background: url(./Images/project-back-ground_6_11zon.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: contain;
 }
 .project-main-right-content{
-    top: 38%;
+    z-index: 1;
+    width: 30rem;
+    font-size: 1.2rem;
+    text-align: center;
 }
+.project-content-container{
+    width: 90%;
+    text-align: center;
+    margin: 2rem auto;
+}
+.project-section4 img{
+    width: 100%;
+}
+.project-card{
+    text-align: center;
+    width: 20rem;
+    height: 25rem;
+    margin: 3rem auto;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.6s;
+    box-shadow: 0px 0px 10px #EA9010;
+}
+.project-card:hover{
+    scale: 1.03;
+}
+.project-card a{
+    padding: 0.6rem 2.6rem;
+    background-color: rgb(78, 78, 255);
+    border-radius: 4px;
+    color: white;
+    transition: 0.8s;
+}
+.project-card a:hover{
+    background: transparent;
+    color: black;
+    border: 2px solid rgb(78, 78, 255);
+}
+
+
+
+
+.mySlides {
+    display: none;
+    border: 3px solid black;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.mySlides img {
+    vertical-align: middle;
+    height: 26rem;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 80%;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+@keyframes fade {
+  from {opacity: .6} 
+  to {opacity: 1}
+}
+
+
+
+.project-section5{
+    box-shadow: 0px 0px 10px #EA9010;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 70%;
+    margin: 2rem auto;
+}
+.quotes-container {
+    position: relative;
+    background: #f1f1f1f1;
+  }
+  
+  /* Slides */
+  .quotes-slides{
+    display: none;
+    padding: 80px;
+    text-align: center;
+  }
+  
+  /* Next & previous buttons */
+  .quotes-prev, .quotes-next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    text-decoration: none;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .quotes-next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .quotes-prev:hover, .quotes-next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+  }
+  
+  /* The dot/bullet/indicator container */
+  .quotes-dot-container {
+      text-align: center;
+      padding: 20px;
+      background: #ddd;
+  }
+  
+  /* The dots/bullets/indicators */
+  .quotes-dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  /* Add a background color to the active dot/circle */
+  .active, .quotes-dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Add an italic font style to all quotes */
+  q {font-style: italic;}
+  
+  /* Add a blue color to the author */
+  .quotes-author {color: cornflowerblue;}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -408,6 +603,7 @@ header{
 
 /* Whats App Icon */
 .whats-app{
+    z-index: 100;
     position: fixed;
     bottom: 4.5rem;
     right: 1.5rem;
@@ -422,6 +618,7 @@ header{
 /* Top Bnt */
 
 .top-btn{
+    z-index: 100;
     display: none;
     width: 2.6rem;
     height: 2.6rem;
@@ -583,7 +780,7 @@ footer ul li:hover{
 
 
 
-@media (min-width:300px) and (max-width:794px) {
+@media (min-width:300px) and (max-width:874px) {
     header{
         left: -0.5rem;
     }
@@ -701,15 +898,36 @@ footer ul li:hover{
 
     /* Projects Page Styles */
     
+    .project-main-background{
+        flex-direction: column;
+    }
     .project-back-img{
         right: 0;
         width: 100%;
         height: 100vh;
     }
     .project-main-right-content{
+        padding: 1rem;
+        backdrop-filter: blur(6px);
+        box-shadow: 0px 0px 6px white;
+        border-radius: 10px;
         width: 20rem;
         position: absolute;
         top: 50%;
+    }
+    .project-content-container{
+        width: 90%;
+    }
+    .mySlides img {
+        height: 20rem;
+    }
+    
+    .slideshow-container {
+        max-width: 100%;
+      }
+
+      .project-section5{
+        width: 95%;
     }
 
     /* Contact Us Page Styles */
