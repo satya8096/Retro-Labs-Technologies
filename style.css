@@ -653,17 +653,22 @@ footer ul li:hover{
         top: 45%;
     }
     .about-content-container{
-        width: 90%;
+        width: 80%;
+        margin: 1rem auto;
     }
     .team-container{
-        width: 85%;
+        width: 90%;
+        margin: 1rem auto;
     }
     .team-members{
         gap: 3rem;
+        margin: 1rem auto;
         flex-direction: column;
     }
     .member-card{
         width: 95%;
+        padding: 0rem; 
+        margin: 1rem auto;
     }
 
     /* Services Page Styles */
@@ -683,7 +688,9 @@ footer ul li:hover{
         flex-direction: column;
     }
     .services-container{
-        width: 100%;
+        width: 90%;
+        margin: 1rem auto;
+        padding: 0.5rem;
     }
     .services-lets-begin-content{
         width: 95%;
