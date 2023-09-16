@@ -988,7 +988,7 @@ footer ul li:hover{
     }
     .project-main-background{
         justify-content: space-around;
-        max-height: 60vh;
+        height: 50vh;
     }
     .project-main-right-content{
         position: absolute;
@@ -1000,7 +1000,7 @@ footer ul li:hover{
         top: 0;
         left: 3rem;
         position: absolute;
-        max-height: 50vh;
+        height: 50vh;
         width: 40%;
         margin: 0.3rem auto;
     }
