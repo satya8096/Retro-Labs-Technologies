@@ -314,9 +314,6 @@ header{
 
 
 /* Project Page Styles */
-/* .project-main-background{
-    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1));
-} */
 .project-back-img{
     width: 53%;
     height: 100vh;
@@ -912,8 +909,6 @@ footer ul li:hover{
         box-shadow: 0px 0px 6px white;
         border-radius: 10px;
         width: 20rem;
-        position: absolute;
-        top: 50%;
     }
     .project-content-container{
         width: 90%;
