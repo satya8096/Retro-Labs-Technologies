@@ -314,9 +314,9 @@ header{
 
 
 /* Project Page Styles */
-.project-main-background{
-    /* background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)); */
-}
+/* .project-main-background{
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1));
+} */
 .project-back-img{
     width: 53%;
     height: 100vh;
@@ -986,5 +986,11 @@ footer ul li:hover{
     .faq-container{
         width: 75%;
         margin: 2rem auto;
+    }
+    .project-main-background{
+        height: 40vh;
+    }
+    .project-back-img{
+        height: 40vh;
     }
 }
