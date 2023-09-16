@@ -992,15 +992,9 @@ footer ul li:hover{
         height: 50vh;
     }
     .project-main-right-content{
-        /* position: absolute;
-        right: 3rem;
-        top: 10rem; */
         width: 50%;
     }
     .project-back-img{
-        /* top: 0;
-        left: 3rem;
-        position: absolute; */
         height: 50vh;
         width: 40%;
         margin: 0.3rem auto;
