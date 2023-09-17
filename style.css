@@ -829,7 +829,7 @@ footer ul li:hover{
         width: 75%;
         margin: 2rem auto;
     }
-    .about-main-background,.service-main-background,.project-main-background,.contact-main-background{
+    .about-main-background,.services-main-background,.project-main-background,.contact-main-background{
         padding: 4rem 0rem 0rem 0rem;
         flex-direction: row;
         justify-content: space-around;
