@@ -107,7 +107,6 @@ header{
     width: 100%;
     margin: 1rem auto;
 }
-
 .web-logo img , .domain-logo img{
     width: 5rem;
     margin: 0.6rem 0rem;
@@ -122,7 +121,6 @@ header{
 .section1-service h3,.section2-service h3{
     color: #D64933;
 }
-
 .why-choose-us,.our-devlp-process{
     width: 70%;
     text-align: center;
@@ -134,15 +132,6 @@ header{
 .why-choose-us h4,.our-devlp-process h4,.ourServices-head{
     color: #EA9010;
 }
-
-
-
-
-
-
-
-
-
 
 /* FAQ styles */
 .faq-container{
@@ -195,31 +184,22 @@ header{
     font-family: 'Ysabeau Infant', sans-serif;
 }
 
-
-
 /* About Page Styles */
-
-.about-main-background,.project-main-background,.services-main-background,.contact-main-background{
+.about-back-img,.service-back-img,.project-back-img,.contact-back-img{
+    padding-top: 4rem;
+    margin: 0.3rem auto;
+    width: 40%;
     height: 100vh;
-    width: 100%;
 }
-.about-back-img{
-    position: absolute;
-    right: 0;
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(./Images/about-background\ _6_11zon.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: contain;
+.about-back-img img,.service-back-img img,.project-back-img img,.contact-back-img img{
+    width: 90%;
 }
-.about-main-right-content,.service-main-right-content,.contact-main-right-content{
-    width: 30rem;
-    position: absolute;
-    top: 35%;
-    right: 4%;
+.about-main-right-content,.service-main-right-content,.project-main-right-content,.contact-main-right-content{
+    z-index: 1;
+    width: 40%;
     font-size: 1.2rem;
     text-align: center;
+    margin-right: 4rem;
 }
 .about-content-container{
     text-align: center;
@@ -254,22 +234,7 @@ header{
     width: 100%;
 }
 
-
-
 /* Services Page Styles */
-.service-back-img{
-    position: absolute;
-    right: 0;
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(./Images/services-background_9_11zon.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: contain;
-}
-.service-main-right-content{
-    top: 30%;
-}
 .services-content-container{
     width: 100%;
     text-align: center;
@@ -303,32 +268,7 @@ header{
     margin-top: 6rem;
 }
 
-
-
-
-
-
-
-
-
-
-
 /* Project Page Styles */
-.project-back-img{
-    padding-top: 4rem;
-    margin: 0.3rem auto;
-    width: 40%;
-    height: 100vh;
-}
-.project-back-img img{
-    width: 90%;
-}
-.project-main-right-content{
-    z-index: 1;
-    width: 40%;
-    font-size: 1.2rem;
-    text-align: center;
-}
 .project-content-container{
     width: 90%;
     text-align: center;
@@ -362,10 +302,6 @@ header{
     color: black;
     border: 2px solid rgb(78, 78, 255);
 }
-
-
-
-
 .mySlides {
     display: none;
     border: 3px solid black;
@@ -414,7 +350,6 @@ header{
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-
 .active {
   background-color: #717171;
 }
@@ -424,13 +359,10 @@ header{
   animation-name: fade;
   animation-duration: 2.5s;
 }
-
 @keyframes fade {
   from {opacity: .6} 
   to {opacity: 1}
 }
-
-
 
 .project-section5{
     box-shadow: 0px 0px 10px #EA9010;
@@ -510,30 +442,7 @@ header{
   /* Add a blue color to the author */
   .quotes-author {color: cornflowerblue;}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Contact Page Styles */
-.contact-back-img{
-    position: absolute;
-    right: 0;
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(./Images/Contact\ us\ page\ background_8_11zon.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: contain;
-}
 .contact-details{
     word-wrap: break-word;
     padding: 1.5rem;
@@ -591,14 +500,6 @@ header{
     box-shadow: 0px 0px 6px blue;
   }
 
-
-
-
-
-
-
-
-
 /* Whats App Icon */
 .whats-app{
     z-index: 100;
@@ -614,7 +515,6 @@ header{
 }
 
 /* Top Bnt */
-
 .top-btn{
     z-index: 100;
     display: none;
@@ -635,10 +535,6 @@ header{
 .top-btn i{
     color: black;
 }
-
-
-
-
 
 /* Footer styles */
 footer{
@@ -681,7 +577,6 @@ footer ul li:hover{
     border-radius: 4px;
     transition: 0.6s;
     font-family: 'Ysabeau Infant', sans-serif;
-
 }
 .footer-social-media button a:hover , .project-main-right-content button a:hover, .about-main-right-content button a:hover,.service-main-right-content button a:hover,.contact-main-right-content button a:hover{
     background-color: #258;
@@ -702,8 +597,6 @@ footer ul li:hover{
     background-color: #2b2b2b;
     color: white;
 }
-
-
 
 /* The Modal (background) */
 .welcome-message{
@@ -745,8 +638,7 @@ footer ul li:hover{
     top: 0rem;
     font-size: 28px;
     font-weight: bold;
-  }
-  
+  } 
   .close:hover,
   .close:focus {
     color: black;
@@ -754,16 +646,7 @@ footer ul li:hover{
     cursor: pointer;
   }
 
-
-
-
-
-
-
-
-
-
-
+  /* Button Animation */
 @keyframes btn-animations {
     0%{
         scale: 1;
@@ -776,8 +659,7 @@ footer ul li:hover{
     }
 }
 
-
-
+/* Mobile & Tab Responsive */
 @media (min-width:300px) and (max-width:874px) {
     header{
         left: -0.5rem;
@@ -837,15 +719,22 @@ footer ul li:hover{
     }
 
     /* About Page Styles */
-    .about-back-img{
-        right: 0;
-        width: 100%;
-        height: 100vh;
+    .about-main-background,.services-main-background,.project-main-background,.contact-main-background{
+        flex-direction: column;
+        justify-content: space-around;
     }
-    .about-main-right-content{
-        width: 20rem;
-        position: absolute;
-        top: 45%;
+    .about-back-img,.service-back-img,.project-back-img,.contact-back-img{
+        height: 60vh;
+        width: 80%;
+        margin: 0rem auto;
+    }
+    .about-back-img img,.service-back-img img,.project-back-img img,.contact-back-img img{
+        width: 95%;
+    }
+    .about-main-right-content,.service-main-right-content,.project-main-right-content,.contact-main-right-content{
+        padding: 1rem;
+        width: 95%;
+        margin-right: 0rem;
     }
     .about-content-container{
         width: 80%;
@@ -867,16 +756,6 @@ footer ul li:hover{
     }
 
     /* Services Page Styles */
-    .service-back-img{
-        right: 0;
-        width: 100%;
-        height: 100vh;
-    }
-    .service-main-right-content{
-        width: 20rem;
-        position: absolute;
-        top: 45%;
-    }
     .services-content-container{
         width: 95%;
         margin-top: 10rem;
@@ -891,60 +770,24 @@ footer ul li:hover{
         width: 95%;
     }
 
-
-
-
     /* Projects Page Styles */
-    
-    .project-main-background{
-        flex-direction: column;
-        justify-content: space-around;
-    }
-    .project-back-img{
-        width: 80%;
-        margin: 0rem auto;
-    }
-    .project-back-img img{
-        width: 95%;
-    }
-    .project-main-right-content{
-        padding: 1rem;
-        backdrop-filter: blur(6px);
-        box-shadow: 0px 0px 6px white;
-        border-radius: 10px;
-        width: 95%;
-    }
     .project-content-container{
         width: 90%;
     }
     .mySlides img {
         height: 20rem;
     }
-    
     .slideshow-container {
         max-width: 100%;
       }
-
       .project-section5{
         width: 95%;
     }
 
     /* Contact Us Page Styles */
-    
-    .contact-back-img{
-        right: 0;
-        width: 100%;
-        height: 100vh;
-    }
-    .contact-main-right-content{
-        width: 20rem;
-        position: absolute;
-        top: 50%;
-    }
     .contact-form-container form,.contact-details{
         width: 95%;
     }
-
     .faq-container{
         width: 95%;
         margin: 2rem auto;
@@ -953,9 +796,6 @@ footer ul li:hover{
         width: 96%;
         left: 2%;
     }
-
-
-
     footer{
         flex-direction: column;
     }
@@ -968,10 +808,10 @@ footer ul li:hover{
     }
 }
 
-
+/* Destop Responsive */
 @media (max-width: 1290px) and (min-width:781px){
     .home-page-back-img{
-        height: 40vh;
+        height: 50vh;
     }
     .section-margin-top{
         top: 0.5rem;
@@ -986,13 +826,15 @@ footer ul li:hover{
         width: 75%;
         margin: 2rem auto;
     }
-    .project-main-background{
+    .about-main-background,.service-main-background,.project-main-background,.contact-main-background{
+        padding: 4rem 0rem 0rem 0rem;
         flex-direction: row;
         justify-content: space-around;
         height: 50vh;
     }
-    .project-main-right-content{
+    .about-main-right-content, .project-main-right-content,.service-main-right-content,.contact-main-right-content{
         width: 50%;
+        margin-right: 0rem;
     }
     .project-back-img{
         height: 50vh;

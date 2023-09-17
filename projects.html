@@ -38,11 +38,7 @@
             </ul>
         </div>
     </header>
-
-
     <!-- Project Main Image -->
-
-
     <div class="project-main-background d-flex align-items-center justify-content-evenly">
         <div class="project-back-img d-flex align-items-center justify-content-center">
             <img src="./Images/project-back-ground_6_11zon.jpg" alt="">
@@ -53,7 +49,7 @@
             <button class="mt-3"><a href="#" class="text-decoration-none">Contact Us <i class="fa-solid fa-angles-right"></i></a></button>
         </div>
     </div>
-
+    <!-- project-content-container -->
     <div class="project-content-container">
         <div class="project-section1">
             <h1 class="text-danger our-portfolio-heating">Our Portfolio</h1>
@@ -62,40 +58,33 @@
         <div class="project-section2">
             <h1 class="text-center text-primary mt-3 mb-3 our-projects-heading">Our Projects</h1>
             <div class="slideshow-container">
-
                 <div class="mySlides fade">
                   <div class="numbertext">1 / 5</div>
                   <img src="./Images/2032707_4_11zon.jpg" style="width:100%">
                   <div class="text">Our First Project</div>
                 </div>
-                
                 <div class="mySlides fade">
                   <div class="numbertext">2 / 5</div>
                   <img src="./Images/2917233_1_11zon.jpg" style="width:100%">
                   <div class="text">Our Second Project</div>
                 </div>
-                
                 <div class="mySlides fade">
                   <div class="numbertext">3 / 5</div>
                   <img src="./Images/3130384_3_11zon.jpg" style="width:100%">
                   <div class="text">Our Third Project</div>
                 </div>
-                
                 <div class="mySlides fade">
                     <div class="numbertext">4 / 5</div>
                     <img src="./Images/5884945_2_11zon.jpg" style="width:100%">
                     <div class="text">Our Fourth Project</div>
-                  </div>
-
+                </div>
                   <div class="mySlides fade">
                     <div class="numbertext">5 / 5</div>
                     <img src="./Images/6242609_5_11zon.jpg" style="width:100%">
                     <div class="text">Our Fifth Project</div>
                   </div>
-                
                 </div>
                 <br>
-                
                 <div style="text-align:center">
                   <span class="dot"></span> 
                   <span class="dot"></span> 
@@ -104,13 +93,11 @@
                   <span class="dot"></span> 
                 </div>
         </div>
-
         <div class="project-section3 mt-5 mb-3">
             <h1 class="text-warning our-portfolio-heading">Our Portfolio Story</h1>
             <p>Every project in our portfolio tells a unique story of collaboration, innovation, and achievement. As you explore the diverse range of web development solutions we've crafted, you'll find stories of businesses and individuals who entrusted us with their digital aspirations. Our portfolio showcases not only our technical expertise but also our ability to listen, adapt, and transform ideas into captivating digital experiences.</p>
         </div>
     </div>
-
     <h1 class="text-center text-primary mt-4 mb-1 our-projects-list-heading">Our Projects List</h1>
         <div class="project-section4 d-flex align-items-center justify-content-center">
             <div class="project-card">
@@ -120,72 +107,39 @@
                 <a href="#" class="text-decoration-none">Live</a>
             </div>
         </div>
-
-
-
+        <!-- Custmer testinomial -->
         <h1 class="text-center text-danger mt-2 mb-2 testimonials-heading">Our Custmer Testimonials</h1>
         <div class="project-section5">
             <div class="quotes-container">
-
                 <div class="quotes-slides">
                   <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
                   <p class="quotes-author">- John Keats</p>
                 </div>
-                
                 <div class="quotes-slides">
                   <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
                   <p class="quotes-author">- Ernest Hemingway</p>
                 </div>
-                
                 <div class="quotes-slides">
                   <q>I have not failed. I've just found 10,000 ways that won't work.</q>
                   <p class="quotes-author">- Thomas A. Edison</p>
                 </div>
-                
                 <a class="quotes-prev" onclick="plusSlides(-1)">❮</a>
                 <a class="quotes-next" onclick="plusSlides(1)">❯</a>
-                
                 </div>
-                
                 <div class="quotes-dot-container">
                   <span class="quotes-dot" onclick="currentSlide(1)"></span> 
                   <span class="quotes-dot" onclick="currentSlide(2)"></span> 
                   <span class="quotes-dot" onclick="currentSlide(3)"></span> 
                 </div>
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <!-- Whats App Icon -->
-
     <div class="whats-app" title="What's App">
         <a href="https://api.whatsapp.com/send/?phone=9398840252&text&type=phone_number&app_absent=0"><i class="fa-brands fa-square-whatsapp"></i></a>
     </div>
-
     <!-- Top Button -->
     <button class="top-btn d-flex align-items-center justify-content-center" onclick="topFunction()" id="top-btn1" title="Go to top"><i class="fa-solid fa-caret-up"></i>
     </button>
-
-
     <!-- Footer  -->
-
     <footer class="d-flex align-items-baseline justify-content-around">
         <div class="footer-slogan footer">
             <h3>Retro Labs</h3>
@@ -227,10 +181,18 @@
     <div class="copyright-container pt-2 pb-2">
         <p class="text-center mt-3">Copyright &copy; All rights Reserved By <a href="#" class="text-decoration-none">Retro Labs Technologies</a></p>
     </div>
-
     <!-- Trigger/Open The Modal -->
-    
-
+    <div class="trigger">
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3 class="welcome-message text-danger">Welcome To Retro Labs Projects</h3>
+                <p>Elevate Your Online Presence with Our Inspired Web Design: Where Every Click Leaves a Lasting Impression.</p>
+            </div>
+        </div>
+    </div>
 
     <!-- JavaScript -->
     <script src="./others/slide.js"></script>
