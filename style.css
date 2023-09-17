@@ -203,7 +203,7 @@ header{
 }
 .about-content-container{
     text-align: center;
-    width: 70%;
+    width: 90%;
     margin: 2rem auto;
 }
 
@@ -740,7 +740,7 @@ footer ul li:hover{
         margin-right: 0rem;
     }
     .about-content-container{
-        width: 80%;
+        width: 85%;
         margin: 1rem auto;
     }
     .team-container{
