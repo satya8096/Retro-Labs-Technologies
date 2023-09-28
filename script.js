@@ -7,7 +7,7 @@ let xmark = document.querySelector(".nav1 ul i");
 
 
 Bars.onclick = ()=>{
-    Nav.style.height = "19rem"
+    Nav.style.height = "60vh"
 }
 
 xmark.onclick = ()=>{
@@ -79,7 +79,7 @@ var span = document.getElementsByClassName("close")[0];
 // When the user clicks on the button, open the modal
 window.onload = setTimeout(function() {
   modal.style.display = "block";
-},3000);
+},5000);
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {

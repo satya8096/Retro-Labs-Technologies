@@ -12,11 +12,17 @@ body p{
     font-family: 'Ysabeau Infant', sans-serif;
 }
 h1,h2,h3,h4,h5{
-    font-family: 'Akaya Telivigala', cursive;
+    font-family: 'Signika Negative', sans-serif;
     font-weight: bold;
+    font-size: 0.2rem;
+    letter-spacing: 0.8px;
 }
 hr.hr{
     border: 2px solid #D64933;
+}
+.top-header{
+    height: 10rem;
+    background-color: aqua;
 }
 .home-page-back-img{
     height: 100vh;
@@ -25,10 +31,13 @@ hr.hr{
 .logo h3{
     font-family: 'Akaya Telivigala', cursive;
 }
+.logo h3 span{
+    color: blueviolet;
+}
 .logo i{
     position: fixed;
     right: -10rem;
-    color: white;
+    color: black;
     font-size: 2rem;
 }
 header{
@@ -38,6 +47,8 @@ header{
     left: -0.5rem;
     width: 100%;
     background:  rgba(75, 75, 75, 0.55);
+    background-color: white;
+    box-shadow: 0px -12px 15px black;
 }
 .nav1{
     margin-top: 0.5rem;
@@ -56,39 +67,68 @@ header{
     transition: 0.5s;
 }
 .nav1 ul li a{
-    padding: 1.6rem;
+    padding: 1.2rem;
     font-family: 'Ysabeau Infant', sans-serif;
     font-weight: 700;
     font-size: 1.2rem;
-    color: white;
+    color: black;
     transition: 0.6s;
 }
 .nav1 ul li:hover{
-    transform: translateY(-6px);
+    transform: translateY(-8px);
     scale: 1.01;
 }
-.nav1 ul li a:hover , .left-headings h1{
-    text-shadow: 0px 0px 10px white;
+.get-free-quote,.header-phone{
+    border-radius: 6px;
+    box-shadow: 0px 0px 2px black;
+    animation: boxshadow 4s infinite;
 }
+.header-phone{
+    margin-left: 1.4rem;
+}
+@keyframes boxshadow {
+    0%{
+        box-shadow: 0px 0px 2px black;
+        scale: 1;
+    }
+    25%{
+        box-shadow: 0px 0px 6px red;
+        scale: 1.01;
+    }
+    50%{
+        box-shadow: 0px 0px 10px #04AA6D;
+        scale: 1.02;
+    }
+    75%{
+        box-shadow: 0px 0px 6px #EA9010;
+        scale: 1.01;
+    }
+    100%{
+        box-shadow: 0px 0px 2px blue;
+        scale: 1;
+    }
+}
+
+
 .section-margin-top{
     position: absolute;
-    top: 6rem;
+    top: 4.5rem;
     width: 100%;
     height: 100vh;
 }
 .home-display-content{
-    margin-top: 2.5rem;
     height: 80%;
     line-height: 2rem;
     letter-spacing: 1px;
     font-size: 1.1rem;
+    /* background-color: rgb(250, 251, 251); */
 }
 .section1-left{
-    width: 35%;
+    width: 40%;
     padding: 1rem;
 }
 .section1-left h1 , .section1-left h4{
-    font-family: 'Akaya Telivigala', cursive;
+    font-family: 'Signika Negative', sans-serif;
 }
 .section1-left .social-icons a i{
     transition: 0.5s;
@@ -102,7 +142,7 @@ header{
     overflow: hidden;
     word-wrap: none;
     border-right: 3px solid red;
-    animation: typing 4s infinite steps(3);
+    animation: typing 3.6s infinite steps(3);
 }
 
 @keyframes typing {
@@ -122,7 +162,7 @@ header{
         width: 40%;
     }
     50%{
-        width: 43%;
+        width: 40%;
     }
     60%{
         width: 40%;
@@ -146,25 +186,30 @@ header{
     padding: 1rem;
 }
 .home-services{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
     width: 100%;
     margin: 1rem auto;
 }
 .web-logo img , .domain-logo img{
     width: 5rem;
-    margin: 0.6rem 0rem;
+    margin: 0.6rem auto;
+
 }
 .section1-service,.section2-service{
-    width: 40%;
-    padding: 3rem;
+    width: 30%;
+    padding: 1rem;
     text-align: center;
     font-size: 1.2rem;
+    transition: 0.3s;
     letter-spacing: 0.8px;
+    border-radius: 3%;
+    box-shadow: 0px 0px 4px #04AA6D;
+}
+.section1-service:hover,.section2-service:hover{
+    background-color: #EA9010;
+    color: white;
 }
 .section1-service h3,.section2-service h3{
-    color: #D64933;
+    color: #1E212B;
 }
 .why-choose-us{
     width: 95%;
@@ -334,11 +379,12 @@ header{
 .project-card{
     text-align: center;
     width: 20rem;
-    height: 25rem;
+    height: 30rem;
     margin: 3rem auto;
     border-radius: 10px;
     overflow: hidden;
     transition: 0.6s;
+    padding: 1rem;
     box-shadow: 0px 0px 10px #EA9010;
 }
 .project-card:hover{
@@ -425,7 +471,7 @@ header{
     box-shadow: 0px 0px 10px #EA9010;
     border-radius: 10px;
     overflow: hidden;
-    width: 70%;
+    width: 90%;
     margin: 2rem auto;
 }
 .quotes-container {
@@ -438,6 +484,10 @@ header{
     display: none;
     padding: 80px;
     text-align: center;
+  }
+  .quotes-slides q{
+    font-size: 1.2rem;
+    letter-spacing: 1px;
   }
   
   /* Next & previous buttons */
@@ -497,7 +547,21 @@ header{
   q {font-style: italic;}
   
   /* Add a blue color to the author */
-  .quotes-author {color: cornflowerblue;}
+  .quotes-author {color: cornflowerblue;font-size: 1.2rem;}
+
+
+
+  .project-clients-container marquee{
+    display: flex;
+  }
+  .project-clients-container marquee img{
+    width: 30%;
+    margin: 1rem;
+    transition: 0.5s;
+  }
+  .project-clients-container marquee img:hover{
+    scale: 1.1;
+  }
 
 /* Contact Page Styles */
 .contact-details{
@@ -619,7 +683,7 @@ footer ul li:hover{
     transform: translateX(6px);
 }
 .footer-contact-us label{
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 500;
     font-family: 'Ysabeau Infant', sans-serif;
 }
@@ -747,10 +811,15 @@ footer ul li:hover{
     .nav1 ul li{
         padding: 1rem;
     }
+    .header-phone{
+        margin-left: 0rem;
+    }
     .left-headings h2, .left-headings h4{
         font-size: 1.4rem;
     }
     .home-display-content{
+        margin-top: 5rem;
+        margin-bottom: 3rem;
         flex-direction: column;
     }
     .section1-left,.section2-right{
@@ -762,12 +831,16 @@ footer ul li:hover{
     }
     .home-services{
         flex-direction: column;
-        margin: 0rem;
+        align-items: center;
+    }
+    .ourServices-head{
+        margin-top: 5rem;
     }
     .section1-service,.section2-service{
         width: 95%;
         padding: 0.8rem;
         color: black;
+        margin: 1.5rem 0rem;
     }
     .why-choose-us{
         width: 95%;
@@ -844,7 +917,11 @@ footer ul li:hover{
       .project-section5{
         width: 95%;
     }
-
+    .project-clients-container marquee img{
+        width: 50%;
+        margin: 1rem;
+        transition: 0.5s;
+      }
     /* Contact Us Page Styles */
     .contact-form-container form,.contact-details{
         width: 95%;
