@@ -891,6 +891,9 @@ footer ul li:hover{
         padding: 0rem; 
         margin: 1rem auto;
     }
+    .member-details-container p button{
+        width: 80%;
+    }
 
     /* Services Page Styles */
     .services-content-container{
