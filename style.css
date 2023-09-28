@@ -952,8 +952,45 @@ footer ul li:hover{
     }
 }
 
+@media (max-width: 1170px) and (min-width:875px){
+    header{
+        left: -0.5rem;
+    }
+    .nav1{
+        position: absolute;
+        width: 100%;
+        top: 2.7rem;
+        height: 0rem;
+        overflow: hidden;
+        left: 0rem;
+        text-align: center;
+        transition: 0.5s;
+        z-index: -10;
+        background-color: rgb(140, 140, 140);
+    }
+    .logo i{
+        top: 0.5rem;
+        right: 1rem;
+    }
+    .nav1 i{
+        top: 1rem;
+        right: 1rem;
+    }
+    .nav1 ul{
+        flex-direction: column;
+    }
+    .nav1 ul li{
+        padding: 1rem;
+    }
+    .nav1 ul li a{
+        color: white;
+    }
+    .header-phone{
+        margin-left: 0rem;
+    }
+}
 /* Destop Responsive */
-@media (max-width: 1290px) and (min-width:781px){
+@media (max-width: 1290px) and (min-width:875px){
     .home-page-back-img{
         height: 50vh;
     }
