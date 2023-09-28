@@ -353,8 +353,8 @@ header{
     color: #D64933;
 }
 .services-container img{
-    width: 20rem;
-    height: 14rem;
+    width: 6rem;
+    /* height: rem; */
     object-fit: cover;
     border-radius: 10px;
 }
