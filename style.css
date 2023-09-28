@@ -988,6 +988,9 @@ footer ul li:hover{
     .header-phone{
         margin-left: 0rem;
     }
+    .about-main-background,.services-main-background,.project-main-background,.contact-main-background{
+        height: 40vh;
+    }
 }
 /* Destop Responsive */
 @media (max-width: 1290px) and (min-width:875px){
