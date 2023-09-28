@@ -8,6 +8,9 @@
     <!-- CSS Link -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- Icon -->
+    <link rel="shortcut icon" href="Images/RetroLabs Icon.png" type="image/x-icon">
+
     <!-- Scroll Reveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
 
@@ -23,7 +26,7 @@
     <!-- Nav Bar -->
     <header class="d-flex align-items-center justify-content-between ms-2 me-2 p-2">
         <div class="logo">
-            <h3 class="text-dark text-center"><span>Retro</span>Labs</h3>
+            <h4 class="text-dark text-center"><span>Retro</span>Labs</h4>
             <i class="fa-solid fa-bars"></i>
         </div>
         <div class="nav1">
@@ -311,6 +314,31 @@
     <script src="./script.js"></script>
     <script src="./others/Queits.js"></script>
     <script>
+        // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+window.onload = setTimeout(function() {
+  modal.style.display = "block";
+},5000);
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+
+// Scrolling Effects
         ScrollReveal({ reset: true,
         distance : '20px',
         duration: 1500,
